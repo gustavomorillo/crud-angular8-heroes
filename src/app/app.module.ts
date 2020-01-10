@@ -18,7 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeroesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule
